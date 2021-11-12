@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class adventure {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		ArrayList<Integer> arr = new ArrayList<>();
+		
+		for(int i = 0; i < n; ++i)
+		{
+			arr.add(sc.nextInt());		
+		}
+		Collections.sort(arr);
+		
+		int result = 0; // 총 그룹의 수
+		int count = 0; // 현재 그룹에 포함된 모헌가의 수
+		for(int i = 0; i < n; ++i) { // 공포도를 낮은 것 부터 하나씩 확인
+			count += 1; // 현재 그룹에 해당 모험가를 포함시키기
+			if(count >= arr.get(i)) { // 현재 그룹에 포함된 모험가의 수가 현재의 공포도 이상이라면, 그룹 결성
+				result += 1; // 총 그룹의 수 증가시키기
+				count = 0; // 현재 그룹에 포함된 모험가의 수 초기화
+			}
+		}
+		System.out.println(result);
+	}
+}
