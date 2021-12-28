@@ -1,3 +1,4 @@
+package basic;
 
 // 최대공약수
 public class Problem6 {

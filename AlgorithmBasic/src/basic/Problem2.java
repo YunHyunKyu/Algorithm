@@ -1,3 +1,4 @@
+package basic;
 
 public class Problem2 {
 	// 피보나치 수

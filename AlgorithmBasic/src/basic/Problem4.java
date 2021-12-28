@@ -1,3 +1,4 @@
+package basic;
 import java.util.Scanner;
 
 // 2진수로 변환

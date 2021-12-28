@@ -1,3 +1,4 @@
+package basic;
 
 // 대소문자 바꾸기
 public class Problem5 {

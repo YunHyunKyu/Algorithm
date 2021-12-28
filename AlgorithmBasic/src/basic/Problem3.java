@@ -1,3 +1,4 @@
+package basic;
 import java.util.Scanner;
 
 // 최빈수 (가장 많이 나온 값)
